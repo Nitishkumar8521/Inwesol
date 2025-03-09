@@ -90,6 +90,36 @@ contact-blog/
 
 - **React Router** – Navigation between pages
 
+
+## API Reference
+
+#### Get all Blogs
+
+```http
+  GET /api/
+```
+
+#### Submit Contact Form
+
+```http
+  POST /api/contact
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `name`      | `string` | **Required**. User's name |
+| `email`      | `string` | **Required**. User's email |
+| `subject`      | `string` | **Required**. Subject of query |
+| `message`      | `string` | **Required**. User's message |
+| `phone`      | `string` | Optional. User's phone number |
+
+## Deployment
+
+You can access the live project here:
+
+[Live Demo](https://tourmaline-paletas-9fa993.netlify.app/)
+
+
 ## Future Enhancements
 
 - Add a backend for form submission
